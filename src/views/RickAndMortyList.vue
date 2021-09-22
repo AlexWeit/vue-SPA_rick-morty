@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     Rick And Morty
-    <character-block/>
+    <character-block @initialized="handler"/>
   </div>
 </template>
 
@@ -13,6 +13,9 @@ export default {
   name: 'rick-and-morty-list',
   components: {
     CharacterBlock
+  },
+  created() {
+    this.$store.dispatch('fetchCharacters', 1);
   }
 }
 </script>
