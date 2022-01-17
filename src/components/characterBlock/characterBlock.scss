@@ -1,0 +1,17 @@
+.character-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 22%;
+  margin: 10px;
+
+  &__image {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+}
